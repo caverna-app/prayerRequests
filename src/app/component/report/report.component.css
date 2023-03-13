@@ -1,0 +1,31 @@
+h1 { text-align: center }
+
+label { display: block; margin: 5px; }
+
+span { color: red; text-decoration: underline; font-weight: bold; }
+
+
+table, tr, td {
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.one { 
+    width: 15%;
+}
+.two { 
+    width: 15%;
+}
+.three { 
+    width: 70%;
+    white-space:pre-wrap;
+    overflow: scroll;
+    scroll: auto;
+}
