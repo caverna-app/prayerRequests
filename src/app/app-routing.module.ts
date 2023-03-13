@@ -3,10 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InputFormComponent } from './component/input-form/input-form.component';
 import { ReportComponent } from './component/report/report.component';
 
-const routes: Routes = [
-  { path: "", component: InputFormComponent },
-  { path: "lista", component: ReportComponent },
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
