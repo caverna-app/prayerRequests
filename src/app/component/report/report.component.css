@@ -16,6 +16,10 @@ table {
     table-layout: fixed;
 }
 
+.header {
+    font-weight: bold;
+    background: #ddd;
+}
 
 .one { 
     width: 15%;

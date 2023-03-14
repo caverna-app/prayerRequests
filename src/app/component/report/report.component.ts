@@ -42,7 +42,7 @@ export class ReportComponent {
     return this.selectedName === name;
   }
 
-  filter() {
+  filter() {    
     if (this.initialDate)
       this.shownReports = this.allReports.filter( x => new Date(x.createdAt ?? Infinity) >= new Date (this.initialDate));
 
@@ -50,7 +50,7 @@ export class ReportComponent {
       this.shownReports = this.allReports.filter( x => new Date(x.createdAt ?? Infinity) <= new Date(this.finalDate));
 
     if (this.selectedName)
-      this.shownReports = this.allReports.filter( x => x.name === this.selectedName);
+      this.shownReports = this.allReports.filter( x => x?.name?.includes(this.selectedName));
 
   }
 

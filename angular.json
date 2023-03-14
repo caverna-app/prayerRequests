@@ -100,7 +100,10 @@
           "options": {
             "browserTarget": "simple-text:build"
           }
-        }        
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
+        }
       }
     }
   }
